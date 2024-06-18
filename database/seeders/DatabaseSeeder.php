@@ -3,6 +3,8 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+
+use App\Models\Post;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -27,5 +29,7 @@ class DatabaseSeeder extends Seeder
             'name' => 'Test admin',
             'role' => 'admin',
         ]);
+
+        Post::factory(10)->create();
     }
 }

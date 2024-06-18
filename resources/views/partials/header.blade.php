@@ -13,7 +13,7 @@
 
           @auth
           <li class="nav-item">
-            <a class="nav-link {{ Request::is('post*') ? 'active' : '' }}" aria-current="page" href="#">Data POST</a>
+            <a class="nav-link {{ Request::is('posts*') ? 'active' : '' }}" aria-current="page" href="{{ route('posts.index') }}">Data POST</a>
           </li>
           @endauth
           @can('admin')  
